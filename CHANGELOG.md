@@ -2,6 +2,67 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 4.0.0 (2024-12-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* rewrite the postinstall script (#192)
+
+### Features
+
+* add raw method ([6751290](https://github.com/microlinkhq/youtube-dl-exec/commit/6751290e306a86d469c160e419ddda3fa3d7ac14))
+* add YOUTUBE_DL_FILE to constants (YOUTUBE_DL_FILENAME with an extension) ([c4de43c](https://github.com/microlinkhq/youtube-dl-exec/commit/c4de43c58c6f5272d120b6f5a0aadbc9e2c05514))
+* add YOUTUBE_DL_HOST as binary ([2d723da](https://github.com/microlinkhq/youtube-dl-exec/commit/2d723da9c78493d7d6032b87b7aab6f0d09bfdf8))
+* add YOUTUBE_DL_SKIP_PYTHON_CHECK env ([#140](https://github.com/microlinkhq/youtube-dl-exec/issues/140)) ([588ce26](https://github.com/microlinkhq/youtube-dl-exec/commit/588ce2624ded9c696bb246142e7b5dca518ff636)), closes [#139](https://github.com/microlinkhq/youtube-dl-exec/issues/139)
+* be possible specify binary path ([d4f06a9](https://github.com/microlinkhq/youtube-dl-exec/commit/d4f06a9967c4f654dc532105b74a5669f689bc39)), closes [#43](https://github.com/microlinkhq/youtube-dl-exec/issues/43)
+* better types definition ([#174](https://github.com/microlinkhq/youtube-dl-exec/issues/174)) ([cb664d4](https://github.com/microlinkhq/youtube-dl-exec/commit/cb664d42facee02d54eacc2fe9a0b4e7a63d217a))
+* move preinstall command into a separate script ([#143](https://github.com/microlinkhq/youtube-dl-exec/issues/143)) ([54125f3](https://github.com/microlinkhq/youtube-dl-exec/commit/54125f32a105f7de16538e186ee1fc3f12144dc6))
+* normalize errors ([a630451](https://github.com/microlinkhq/youtube-dl-exec/commit/a630451a4282f6ed527db9140676f563e97ad284))
+* preinstall check for python and python3 version >=3.7 ([913843c](https://github.com/microlinkhq/youtube-dl-exec/commit/913843c17a56a120736e8f0f001d6ead750486c4))
+* read npm_config environment variables ([a62b0f3](https://github.com/microlinkhq/youtube-dl-exec/commit/a62b0f3315375ea3c9e2dca7023b5073ee26203a))
+* rewrite the postinstall script ([#192](https://github.com/microlinkhq/youtube-dl-exec/issues/192)) ([0d69f1a](https://github.com/microlinkhq/youtube-dl-exec/commit/0d69f1a0d1a8b8b9c2b80e2aeef47ff050230afb))
+* use tinyspawn ([#173](https://github.com/microlinkhq/youtube-dl-exec/issues/173)) ([c8eb5ba](https://github.com/microlinkhq/youtube-dl-exec/commit/c8eb5ba3c789d104814e76b11a209849c8b0422c))
+* use yt-dlp ([6a09794](https://github.com/microlinkhq/youtube-dl-exec/commit/6a097940387e863f4d4f59171e4d99cb4e29932c))
+
+
+### Bug Fixes
+
+* add `remuxVideo` type ([#149](https://github.com/microlinkhq/youtube-dl-exec/issues/149)) ([e98af09](https://github.com/microlinkhq/youtube-dl-exec/commit/e98af09ba0e4bcaecec6341ff0ee20b47f917467))
+* add FormatSort type ([#209](https://github.com/microlinkhq/youtube-dl-exec/issues/209)) ([d29d75a](https://github.com/microlinkhq/youtube-dl-exec/commit/d29d75a379038dd5ae2fe54a4b6b0da76ae41ca1))
+* add missing types ([#201](https://github.com/microlinkhq/youtube-dl-exec/issues/201)) ([fc125fb](https://github.com/microlinkhq/youtube-dl-exec/commit/fc125fb94c1cadd8f960c535c27a32da868c1a45))
+* add potsinstall script ([8324493](https://github.com/microlinkhq/youtube-dl-exec/commit/8324493550cfc85799fdd5046396f5b2a987f148))
+* attach stdout/stderr to error object ([a1f41ec](https://github.com/microlinkhq/youtube-dl-exec/commit/a1f41ecfb7db462fa262c58e80431c61e9434e4f))
+* catch ENOENT ([#200](https://github.com/microlinkhq/youtube-dl-exec/issues/200)) ([215a4c7](https://github.com/microlinkhq/youtube-dl-exec/commit/215a4c75d29302f17f47608c13823fe2e85c0d02))
+* check for binary data ([35ac355](https://github.com/microlinkhq/youtube-dl-exec/commit/35ac355de8510b1d663b6f331270f6fd422444ce)), closes [#146](https://github.com/microlinkhq/youtube-dl-exec/issues/146)
+* correct file name variable ([8b2d716](https://github.com/microlinkhq/youtube-dl-exec/commit/8b2d716f1c4a6bfd8ed8de9429bca4fc691ce967))
+* correct platform value on windows ([69bee90](https://github.com/microlinkhq/youtube-dl-exec/commit/69bee904bdd86cc89afae8458dbeed5d62f4b4c3))
+* default binary file doesn't depend on `YOUTUBE_DL_PLATFORM` ([45bad59](https://github.com/microlinkhq/youtube-dl-exec/commit/45bad5964f03bd7490ac9cdc0b9694397cc257d7))
+* ensure isJSON receive string  ([d3b6818](https://github.com/microlinkhq/youtube-dl-exec/commit/d3b6818feb4b5917cf1d5d49673a3a6db26bdf49)), closes [#28](https://github.com/microlinkhq/youtube-dl-exec/issues/28)
+* fix file permissions ([#104](https://github.com/microlinkhq/youtube-dl-exec/issues/104)) ([ef9b4f0](https://github.com/microlinkhq/youtube-dl-exec/commit/ef9b4f091c1b60062e0e153192d0100f7c7c1758))
+* fs promises for node 10 ([585250b](https://github.com/microlinkhq/youtube-dl-exec/commit/585250bcc0a65059db02fe16531330d92885eac7)), closes [#3](https://github.com/microlinkhq/youtube-dl-exec/issues/3)
+* lock p-reflect version ([624336f](https://github.com/microlinkhq/youtube-dl-exec/commit/624336f2a99ea159d9a20a6b0814c08b94136d21))
+* metadataFromFile is not supported ([6ee6f15](https://github.com/microlinkhq/youtube-dl-exec/commit/6ee6f15393a54e77069f85e414c1f28d4332bf43)), closes [#141](https://github.com/microlinkhq/youtube-dl-exec/issues/141)
+* npm duplicate image ([#205](https://github.com/microlinkhq/youtube-dl-exec/issues/205)) ([253f483](https://github.com/microlinkhq/youtube-dl-exec/commit/253f48393d2432e6b104b94819db0b89331abada))
+* npm v6 did not always lowercase the keys ([b0d9ada](https://github.com/microlinkhq/youtube-dl-exec/commit/b0d9ada22cec33237dc625d9b9c9df790a043e5e))
+* npm_config env variables are always lowercase ([11250bb](https://github.com/microlinkhq/youtube-dl-exec/commit/11250bbfb4302c6a0c8e3aafab4d40c02d58cc1c))
+* **Readme:** fix typo ([40b4668](https://github.com/microlinkhq/youtube-dl-exec/commit/40b4668d3c5319cce9ae674bc4cfa8d40cebf634))
+* remove binary ([4d5a1df](https://github.com/microlinkhq/youtube-dl-exec/commit/4d5a1dfad3bab3e16c209d9ee80797d5e06be81b))
+* require python3.7 or above ([8f96e3f](https://github.com/microlinkhq/youtube-dl-exec/commit/8f96e3f23de73b12180781a337c8c20b71244b41))
+* single-character-flags with values are now supported ([c7228c0](https://github.com/microlinkhq/youtube-dl-exec/commit/c7228c0e0464bd8aa9753043a5f88b6a76eb826e))
+* stdout can be 'null' ([#167](https://github.com/microlinkhq/youtube-dl-exec/issues/167)) ([92150fe](https://github.com/microlinkhq/youtube-dl-exec/commit/92150fe361fa022863d6bef4eeb5dc771e5b72e0))
+* types ([#197](https://github.com/microlinkhq/youtube-dl-exec/issues/197)) ([2a152c1](https://github.com/microlinkhq/youtube-dl-exec/commit/2a152c184958521447648ae6265c0083c96ead50)), closes [#196](https://github.com/microlinkhq/youtube-dl-exec/issues/196)
+* typescript defs for function properties ([bae125e](https://github.com/microlinkhq/youtube-dl-exec/commit/bae125ea7f9616a6203ef0519db66c567966260b))
+* typescript typings ([5ea5a22](https://github.com/microlinkhq/youtube-dl-exec/commit/5ea5a22322e59f4d3a147526c6bf4a5689fa00c8))
+* **types:** expose exec & create methods ([#177](https://github.com/microlinkhq/youtube-dl-exec/issues/177)) ([d17ecb5](https://github.com/microlinkhq/youtube-dl-exec/commit/d17ecb57fcd8defce3769626d65bd1b6972d2f5a))
+* **types:** fix return type of youtubeDl function ([#211](https://github.com/microlinkhq/youtube-dl-exec/issues/211)) ([dcfa0d0](https://github.com/microlinkhq/youtube-dl-exec/commit/dcfa0d0cc9a8e5e9274fd72419b5cdd0f1a5a8f5))
+* typo error ([adf9e4b](https://github.com/microlinkhq/youtube-dl-exec/commit/adf9e4b5edcb804e362ab6ea4e85dd415cdc2c7e))
+* update bin-version-check to remove security warnings ([#154](https://github.com/microlinkhq/youtube-dl-exec/issues/154)) ([8b1cae8](https://github.com/microlinkhq/youtube-dl-exec/commit/8b1cae8767f4d6120d8f135ffbcac6d4a74ab7be))
+* updated test file ([3d45d24](https://github.com/microlinkhq/youtube-dl-exec/commit/3d45d248165c6fcc4c06f2195e6e911199163966))
+* use node14 or above ([c8595bc](https://github.com/microlinkhq/youtube-dl-exec/commit/c8595bcaf4b68ef74c7c5ed8a7f385e4bdbe0435))
+* variable name ([b82103c](https://github.com/microlinkhq/youtube-dl-exec/commit/b82103cc070ad84879e4d7559ee044fd4e7591f6))
+* **windows:** npm run check ([86788ed](https://github.com/microlinkhq/youtube-dl-exec/commit/86788edc4846450496766414613e54e721386796))
+
 ### 3.0.10 (2024-09-30)
 
 ### [3.0.9](https://github.com/microlinkhq/youtube-dl-exec/compare/v3.0.8...v3.0.9) (2024-09-17)

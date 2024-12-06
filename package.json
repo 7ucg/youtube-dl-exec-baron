@@ -1,8 +1,8 @@
 {
-  "name": "youtube-dl-exec",
+  "name": "youtube-dl-exec-baron",
   "description": "A simple Node.js wrapper for youtube-dl",
   "homepage": "https://github.com/microlinkhq/youtube-dl-exec",
-  "version": "3.0.10",
+  "version": "4.0.0",
   "types": "src/index.d.ts",
   "main": "src/index.js",
   "author": {
